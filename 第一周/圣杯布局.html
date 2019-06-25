@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圣杯布局或双飞翼布局</title>
+    <style>
+        .container{width:800px;margin:50px auto;background:#ddd;}
+        .wrapper{padding: 0 100px 0 100px}
+        .col{position: relative;float: left;}
+        .main{width:100%;height: 200px;background: #ccc;}
+        .left{width:100px;height: 200px;margin-left: -100%;left: -100px;background:#eee}
+        .right{width:100px;height: 200px;margin-left:-100px;right: -100px;background:#eee}
+        .clearfix::after{content: '';display: block;clear: both;visibility: hidden;height: 0;overflow: hidden;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="wrapper clearfix">
+            <div class="main col">main</div>
+            <div class="left col">left</div>
+            <div class="right col">right</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

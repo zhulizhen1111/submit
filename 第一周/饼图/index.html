@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>饼图</title>
+</head>
+<style>
+    body {}
+
+    .pie {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        top: 0px;
+        left: 0px;
+        background-color: yellowgreen;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .main {
+        position: absolute;
+        width: 140px;
+        height: 70px;
+        background-color: yellowgreen;
+        border-radius: 0 0 140px 140px;
+        top: 20px;
+        left: -35px;
+        z-index: 1;
+        transform: rotate(110deg);
+    }
+
+    .self-main {
+        position: absolute;
+        width: 140px;
+        height: 70px;
+        background: #ccc;
+        border-radius: 0 0 140px 140px;
+        top: 35px;
+        left: 35px;
+        z-index: 1;
+        transform: rotate(-90deg);
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+        top: 35px;
+        left: 35px;
+        background: #fff;
+        position: absolute;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+        z-index: 1;
+    }
+
+    /* .circle-bottom {
+        width: 70px;
+        height: 35px;
+        top: 25%;
+        left: 25%;
+        background: #fff;
+        position: absolute;
+        display: inline-block;
+        border-radius: 70px 70px 0 0;
+    }
+
+    .circle-top {
+        width: 70px;
+        height: 35px;
+        top: 25%;
+        left: 25%;
+        background: #fff;
+        position: absolute;
+        display: inline-block;
+        border-radius: 0 0 70px 70px;
+    } */
+
+    strong {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        z-index: 1
+    }
+</style>
+
+<body>
+    <div class="pie">
+        <div class="self-main"></span></div>
+        <div class="main"></span></div>
+        <div class="circle">60%</div>
+    </div>
+</body>
+
+</html>

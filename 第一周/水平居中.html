@@ -1,0 +1,60 @@
+<!DOCtype <html>
+  <head>
+      <meta charset='utf-8'/>
+      <title>水平居中</title>
+      <style>
+          /*1 .parent{
+              width:100px;
+              height: 100px;
+              text-align: center;
+              background: #ccc;
+          } */
+           /*2 .child{
+              display: table;
+              margin: 0 auto;
+          } */
+          /*3 .parent{
+              position: relative;
+              height: 100px;
+              width: 100px;
+              background: #ccc;
+          }
+          .child{
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%)
+          } */
+          /*3 .parent{
+              position: relative;
+              height: 100px;
+              width: 100px;
+              background: #ccc;
+          }
+          .child{
+              position: absolute;
+              left: 50%;
+              width:50px;
+              margin-left:-25px;
+          } */
+          .parent{
+              display: flex;
+              justify-content: center;
+              background: #ccc;
+              width:100px;
+              height:100px;
+          }
+          .child{
+              margin:0 auto;
+          }
+
+      </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">3333</div>
+    </div>
+    <script>
+      
+     </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCtype <html>
+  <head>
+      <meta charset='utf-8'/>
+      <title>水平垂直居中</title>
+      <style>
+          /*1 .parent{
+             width: 100px;
+             height: 100px;
+             background: #ccc; 
+             text-align: center;
+             vertical-align: middle;
+             display: table-cell;
+          } */
+          /* .parent{
+              width: 100px;
+              height: 100px;
+              background: #ccc;
+              position: relative;
+          }
+          .child{
+              position: absolute;
+              left: 50%;
+              top:50%;
+              transform: translate(-50%,-50%)
+          } */
+          .parent{
+              width:100px;
+              height: 100px;
+              background: #ccc;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+      </style>
+  </head>
+  <body>
+    <div class="parent">
+        <div class="child"> 555555</div>
+    </div>
+    <script>
+        var str = "123cc3445c";
+        function format_number(n){  
+            var b=n.toString();  
+            var len=b.length;  
+            if(len<=3){return b;}  
+            var r=len%3; 
+            return r>0?b.slice(0,r)+","+b.slice(r,len).match(/\w{3}/g).join(","):b.slice(r,len).match(/\w{3}/g).join(",");  
+         }  
+        console.log(format_number(str))
+     </script>
+  </body>
+</html>
